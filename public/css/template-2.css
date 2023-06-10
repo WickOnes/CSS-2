@@ -53,7 +53,7 @@
     width: fit-content;
 }
 
-.page_block:not(:last-of-type) {
+.page_block:not(:last-child) {
     margin-bottom: 80px;
 }
 
