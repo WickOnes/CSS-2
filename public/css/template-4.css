@@ -6,11 +6,16 @@
     --size-s: 14px;
     --size-d: 16px;
     --size-l: 20px;
+    --size-lg:36px;
 
     --color-border: grey;
     --color-primary: rgb(47, 47, 255);
     --coor-white: white;
     --border-radius: 12px;
+
+    
+    --weight-title:500;
+    --weight-text:400;
 
 
 }
@@ -49,6 +54,7 @@
     font-size: 17px;
     width: 24px;
     height: 24px;
+    color: var(--coor-white);
 
     border-radius: calc(var(--border-radius)/2);
     background-color: var(--color-primary);
@@ -113,8 +119,6 @@
     display: flex;
     align-items: center;
     gap: 36px;
-    padding-bottom: 36px;
-    border-bottom: 1px solid var(--color-border);
 }
 
 .hero_image {
@@ -126,22 +130,30 @@
 .hero_content {
     display: flex;
     flex-direction: column;
+    align-items: start;
     gap: var(--space-l);
 }
 
 .hero_title {
-    font-size: 50px;
+    font-size: var(--size-lg);
     color: rgb(54, 53, 53);
-    font-weight: 500;
+    font-weight: var(--weight-title);
     line-height: 120%;
 }
 
 .hero_text {
     color: rgb(54, 53, 53);
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: var(--weight-text);
+    font-size: var(--size-d);
     line-height: 170%;
 }
+
+.hero_button {
+    color: var(--coor-white);
+    background-color: gray;
+    
+}
+
 
 .blog {
     display: flex;
@@ -151,17 +163,17 @@
 }
 
 .card {
-
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: var(--space-l);
+    text-align: start;
+    width: 330px;
+    gap: var(--space-m);
+    
 }
 
 .card_image {
-    width: 140px;
-    height: 140px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
 }
 
@@ -172,14 +184,12 @@
 }
 
 .card_text {
-    font-size: 16;
+    font-size: var(--size-d);
     font-weight: 400;
     color: var(--color-border);
 }
-
-.card_button {
-    color: var(--coor-white);
-    background-color: gray;
+.card_button{
+   margin-top:auto;
 }
 
 .button:hover {
@@ -198,7 +208,8 @@
 .form_content {
     display: flex;
     flex-direction: column;
-    gap: var(--size-s);
+    width: 240px;
+    gap: var(--space-m);
 }
 
 .form_title {
@@ -207,16 +218,12 @@
     color: var(--coor-white);
 }
 
-.form_info {
-    font-size: var(--size-d);
-    font-weight: 400;
-    color: var(--coor-white);
-}
-
 .form_button {
-    color: var(--coor-white);
+    width: 100%;
     color: black;
     background-color: white;
+    text-align: center;
+   
 }
 
 .button {
