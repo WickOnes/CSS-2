@@ -1,0 +1,78 @@
+<header class="header">
+	{{> logo}}
+	<nav class="header_nav">
+		<div class="header_nav_right">{{>nav list=header }}</div>
+	</nav>
+</header>
+
+
+<main class="main">
+	<div class="info">
+		<h1 class="info_title">{{info.title}}</h1>
+		<p class="info_text">{{info.description}}</p>
+	</div>
+
+	<form class="form">
+		{{#with form}}
+
+		{{#each inputs }}
+		<input type="{{type}}" placeholder="{{placeholder}}" name="{{name}}" id="{{id}}">
+		{{/each}}
+		<div class="checkbox">
+			<input type="checkbox" name="{{checkbox.name}}">
+			<label for="checkbox">{{checkbox.label}}</label>
+		</div>
+		<button class="form_button ">{{button}}</button>
+		<p class="form_info ">{{info}}</p>
+		{{/with}}
+	</form>
+</main>
+
+<div class="update">
+	{{#with updates}}
+	<h2 class="update_title border">
+		{{title}}
+	</h2>
+
+	{{#each list }}
+	<div class="list_content">
+		<div class="list_img">32x32</div>
+		<div class="list_info border">
+			<span class="list_nickname">{{nickname}}</span>
+			<p class="list_descr">{{description}}</p>
+		</div>
+	</div>
+	{{/each}}
+	<a href="{{show_all.url}}">{{show_all.text}}</a>
+	{{/with}}
+</div>
+
+<div class="expirience">
+	{{#with expirience}}
+	<h2 class="exp_title">{{title}}</h2>
+	<div class="exp_badge">{{badge}}</div>
+
+	<div class="exp_content">
+		{{#each list }}
+			<div class="exp_list">
+				<h3 class="exp_list_title">{{name}}</h3>
+				<p class="exp_list_text">{{details}}</p>
+			</div>
+		{{/each}}
+	</div>
+
+	{{/with}}
+</div>
+
+<footer class="footer">
+	<div class="">
+		{{> logo}}
+		<span class="footer_copyright">Copyright 2024</span>
+	</div>
+	{{#each footer}}
+	<div class="">
+		<span class="footer_title">{{title}}</span>
+		{{> nav list=links isVertical=true}}
+	</div>
+	{{/each}}
+</footer>
