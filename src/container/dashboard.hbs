@@ -1,0 +1,225 @@
+<html>
+
+<head>
+    <title>
+        {{Slack}}
+    </title>
+    <link rel='apple-touch-icon' sizes='180x180' href='fav/apple-touch-icon.png' />
+    <link rel='icon' type='image/png' sizes='32x32' href='fav/favicon-32x32.png' />
+    <link rel='icon' type='image/png' sizes='16x16' href='fav/favicon-16x16.png' />
+    <link rel='manifest' href='fav/site.webmanifest' />
+    <meta name='msapplication-TileColor' content='#da532c' />
+    <meta name='theme-color' content='#ffffff' />
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href='css/normalize.css' rel='stylesheet' />
+
+
+    <link rel='stylesheet' href='css/dashboard.css' />
+</head>
+
+<body>
+    <div class="page page--dashboard">
+
+        <aside class="page__aside aside">
+            <div class="aside__logo">
+                Sidebar
+            </div>
+
+            <nav class="vertical vertical--small">
+                <a href="#" class="nav-button nav-button__active click">
+                    <span class="icon nav-button__icon hover"
+                        style="background-image: url('/svg/nav/home.svg');"></span>
+                    <span class="text text--light">Home</span>
+                </a>
+                <a href="#" class="nav-button click">
+                    <span class="icon nav-button__icon  hover"
+                        style="background-image: url('/svg/nav/orders.svg');"></span>
+                    <span class="text text--light">Orders</span>
+                </a>
+                <a href="#" class="nav-button  click">
+                    <span class="icon nav-button__icon  hover"
+                        style="background-image: url('/svg/nav/products.svg');"></span>
+                    <span class="text text--light">Product</span>
+                </a>
+            </nav>
+        </aside>
+
+        <header class="header">
+            <div class="layout header__content text--small">
+                <div class="header__search">
+                    <input type="text" placeholder="Search" class="field field--header text">
+                    <span class="icon header__icon-search"></span>
+                    <span class="icon header__icon-settings icon-buttoon click"></span>
+                </div>
+                <div class="header__icons">
+                    <span class="icon header__icon icon-buttoon click header__icon--antena"
+                        style="background-image: url(/svg/antena.svg);"></span>
+                    <span class="icon header__icon icon-buttoon click header__icon--symbol"
+                        style="background-image: url(/svg/symbol.svg);"></span>
+                    <span class="icon header__icon icon-buttoon click header__icon--bell"
+                        style="background-image: url(/svg/bell.svg);"></span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main layout">
+
+            <div class="main__cards">
+                <div class="main-card earning">
+                    <span class="main-card__icon icon"
+                        style="background-image: url(/svg/money.svg); background-color:#402B9C"></span>
+                    <div class="main-card__text">
+                        <div class="main-card__total text--light">$500.00</div>
+                        <div class=" text--grey">Total earning</div>
+                    </div>
+                </div>
+                <div class="main-card order">
+                    <span class="main-card__icon icon" style="background-image: url(/svg/order.svg);"></span>
+                    <div class="main-card__text">
+                        <div class="main-card__total text--light">$961</div>
+                        <div class=" text--grey">Total earning</div>
+                    </div>
+                </div>
+                <div class="main-card d-flex main-card--small">
+                    <span class="main-card__icon icon"
+                        style="background-image: url(/svg/money.svg); background-color:#0068BC"></span>
+                    <div class="main-card__small">
+                        <div class="text--light text--bold">$203k</div>
+                        <div class="main-card__text--small text--grey">Total Income</div>
+                    </div>
+                </div>
+                <div class="main-card  d-flex">
+                    <span class="main-card__icon icon"
+                        style="background-image: url(/svg/shop.svg);background-color: rgba(255, 196, 0, 0.245)"></span>
+                    <div class="main-card__small">
+                        <div class="text--bold">$203k</div>
+                        <div class="main-card__text--small">Total Income</div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="purchase">
+                <div class="purchase-list ">
+                    <h2 class="list__header text--heading divider">
+                        Purchase list
+                    </h2>
+                    <div class="purchase__info">
+                        <div class="divider purchase__info__blok">
+                            <div class="info__block">
+                                <p>ID437661</p>
+                                <p>May 11, 2023, 14:21</p>
+                            </div>
+                            <div class="info__block">
+                                <p>AirOn ProCam</p>
+                                <p>7/8 USB Type-C</p>
+                            </div>
+                            <div class="info__block">
+                                <p>132.32 EUR</p>
+                                <p class="text--red">Not paid</p>
+                            </div>
+                            <div class="info__block">
+                                <p>Customer</p>
+                                <p>robin@com.de</p>
+                            </div>
+                        </div>
+                        <div class="purchase__info__blok">
+                            <div class="info__block">
+                                <p>ID437661</p>
+                                <p>May 11, 2023, 14:21</p>
+                            </div>
+                            <div class="info__block">
+                                <p>PHILIPS Essential</p>
+                                <p>HD9200/90</p>
+                            </div>
+                            <div class="info__block">
+                                <p>543 USD</p>
+                                <p class="text--green">Pay by Stripe</p>
+                            </div>
+                            <div class="info__block">
+                                <p>Customer</p>
+                                <p>dima@com.ua</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment">
+                    <h2 class="list__header text--heading divider">
+                        Payment
+                    </h2>
+                    <form class="payment__choice">
+
+                        <div class="payment__radio">
+                            <div>
+                                <input type="radio" id="payment1" name="payment">
+                                <label for="payment">Credit card</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="payment2" name="payment">
+                                <label for="payment">Debit cad</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="payment3" name="payment">
+                                <label for="payment">PayPal</label>
+                            </div>
+                        </div>
+
+
+                        <div class="payment__info divider">
+                            <div class="header__search head--grid">
+                                <label for="name">Name of card</label>
+                                <input type="text" name="name" class="field  text">
+                            </div>
+                            <div class="header__search head--grid">
+                                <label for="name">Credit card number</label>
+                                <input type="text" name="name" class="field  text">
+                            </div>
+                            <div class="header__search head--grid">
+                                <label for="name">Expiration</label>
+                                <input type="text" name="name" class="field  text">
+                            </div>
+                            <div class="header__search head--grid">
+                                <label for="name">CVV</label>
+                                <input type="text" name="name" class="field  text">
+                            </div>
+                        </div>
+
+
+                        <div class="payment__address">
+                            <div>
+                                <label class="block" for="country">Country</label>
+                                <select class="field option " id="country" name="country">
+                                    <option value="" disabled selected hidden>Choose...</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block" for="state">State</label>
+                                <select class="field option" id="state" name="state">
+                                    <option value="" disabled selected hidden>Choose...</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+
+
+
+                </div>
+
+            </section>
+        </main>
+
+
+    </div>
+</body>
+
+</html>
